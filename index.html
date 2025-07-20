@@ -2,77 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fatima Bukhari - Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Fatima Bukhari</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
+    <nav class="container">
+      <h1 class="logo">Fatima Bukhari</h1>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home">
-    <h2>Welcome!</h2>
-    <p>I am <strong>Fatima Bukhari</strong>, a passionate <strong>Freelancer</strong> and <strong>Instructor at Aptech</strong>.</p>
-    <p>Skilled in both front-end and back-end development with experience in modern frameworks and CMS platforms.</p>
-  </section>
+  <main class="container">
+    <!-- Home -->
+    <section id="home" class="section home-section">
+      <div>
+        <h2>Hello, I'm <span class="highlight">Fatima</span></h2>
+        <p>Freelancer & Instructor at Aptech | Expert in PHP, Laravel, WordPress, JavaScript & More.</p>
+      </div>
+      <img src="images/profile.jpg" alt="Fatima Bukhari" class="profile-img" />
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I specialize in full-stack web development and have been teaching web technologies at Aptech while also working on freelance projects worldwide.</p>
-    <p>Explore my work on <a href="https://github.com/Fatimabukhari456" target="_blank">GitHub</a>.</p>
-  </section>
+    <!-- About -->
+    <section id="about" class="section card">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate developer and teacher with expertise in PHP, Laravel, WordPress, ASP.NET, Python, MySQL, and MongoDB. I love creating efficient solutions and sharing knowledge.
+      </p>
+      <p>Check my GitHub: <a href="https://github.com/Fatimabukhari456" target="_blank" rel="noopener">FatimaBukhari456</a></p>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>PHP</li>
-      <li>Laravel</li>
-      <li>WordPress</li>
-      <li>HTML / CSS / Bootstrap</li>
-      <li>JavaScript</li>
-      <li>MySQL</li>
-      <li>ASP.NET</li>
-      <li>Python</li>
-      <li>MongoDB</li>
-    </ul>
-  </section>
+    <!-- Skills -->
+    <section id="skills" class="section card">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>PHP</li>
+        <li>Laravel</li>
+        <li>WordPress</li>
+        <li>HTML, CSS, Bootstrap</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+        <li>ASP.NET</li>
+        <li>Python</li>
+        <li>MongoDB</li>
+      </ul>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Aptech Learning Portal</h3>
-      <p>A platform for managing student attendance, assignments, and performance reports.</p>
-    </div>
-    <div class="project">
-      <h3>Freelance E-commerce Website</h3>
-      <p>Developed with WordPress + WooCommerce for a clothing brand client.</p>
-    </div>
-    <div class="project">
-      <h3>Laravel CRM</h3>
-      <p>Custom CRM solution built using Laravel and MySQL for a small business.</p>
-    </div>
-  </section>
+    <!-- Projects -->
+    <section id="projects" class="section card">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Aptech Learning Portal</h3>
+        <p>A platform to manage attendance, assignments & student progress.</p>
+      </div>
+      <div class="project">
+        <h3>Freelance E-commerce Website</h3>
+        <p>WordPress + WooCommerce for a clothing brand.</p>
+      </div>
+      <div class="project">
+        <h3>Laravel CRM</h3>
+        <p>Custom CRM built with Laravel & MySQL.</p>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-   <form action="https://formspree.io/f/your-form-id" method="POST">
-  <input type="text" name="name" placeholder="Your name" required>
-  <input type="email" name="email" placeholder="Your email" required>
-  <textarea name="message" placeholder="Your message" required></textarea>
-  <button type="submit">Send</button>
-</form>
+    <!-- Achievements slider -->
+    <section id="achievements" class="section card">
+      <h2>Achievements</h2>
+      <div class="slider-container">
+        <button class="slider-btn prev-btn" aria-label="Previous Slide">&#10094;</button>
+        <div class="slider">
+          <div class="slide">
+            <img src="images/trophy1.jpg" alt="Trophy 1" />
+            <p>Best Freelancer Award 2024</p>
+          </div>
+          <div class="slide">
+            <img src="images/certificate1.jpg" alt="Certificate 1" />
+            <p>Laravel Certified Developer</p>
+          </div>
+          <div class="slide">
+            <img src="images/trophy2.jpg" alt="Trophy 2" />
+            <p>Top Instructor Award</p>
+          </div>
+          <!-- Add more slides as you want -->
+        </div>
+        <button class="slider-btn next-btn" aria-label="Next Slide">&#10095;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
 
-  </section>
+    <!-- Contact -->
+    <section id="contact" class="section card">
+      <h2>Contact Me</h2>
+      <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Fatima Bukhari | Freelancer & Aptech Instructor</p>
